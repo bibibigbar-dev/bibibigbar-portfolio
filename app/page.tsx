@@ -16,7 +16,7 @@ export default async function HomePage() {
           className="absolute inset-0 -z-10"
           style={{
             backgroundImage:
-              "linear-gradient(120deg, rgba(11,42,67,0.72), rgba(224,122,61,0.35)), url('https://images.unsplash.com/photo-1494522358652-f30e61a60313?auto=format&fit=crop&w=2000&q=80')",
+              "linear-gradient(120deg, rgba(11,42,67,0.72), rgba(224,122,61,0.35)), url('https://images.unsplash.com/photo-1545193544-312983719627?auto=format&fit=crop&w=2000&q=80')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

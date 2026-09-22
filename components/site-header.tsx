@@ -9,7 +9,7 @@ interface SiteHeaderProps {
 
 export function SiteHeader({ user, boards }: SiteHeaderProps) {
   return (
-    <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-[rgba(247,250,252,0.82)] backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-[rgba(247,250,252,0.88)] backdrop-blur-md">
       <div className="container flex items-center justify-between gap-4 py-3">
         <Link href="/" className="display text-xl font-bold text-[var(--sky-deep)] sm:text-2xl">
           Living in Dallas
@@ -51,7 +51,7 @@ export function SiteHeader({ user, boards }: SiteHeaderProps) {
           ) : null}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           {user ? (
             <>
               <span className="hidden text-sm text-[var(--muted)] sm:inline">{user.name}</span>

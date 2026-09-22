@@ -13,8 +13,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        display: ["Fraunces", "Georgia", "serif"],
-        sans: ["Manrope", "Segoe UI", "sans-serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+        sans: ["var(--font-sans)", "Segoe UI", "sans-serif"],
       },
     },
   },
