@@ -28,6 +28,9 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# local community data store
+/data/store.json
+
 # vercel
 .vercel
 

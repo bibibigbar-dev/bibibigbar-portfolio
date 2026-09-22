@@ -1,42 +1,40 @@
-# BIBIBIGBAR — Creative Portfolio
+# Living in Dallas
 
-BIBIBIGBAR's creative portfolio with dynamic typography and colorful animations,
-inspired by [Daniel Spatzek](https://www.spatzek.com/)'s bold typographic style.
+Community hub for people settling into Dallas–Fort Worth life. Browse topic boards, write posts, and manage content from separate member and admin workspaces.
 
-## Tech Stack
+## Features
 
-- **Next.js 15** (App Router) + **React 18** + **TypeScript**
-- **Tailwind CSS** for a vibrant, colorful design system
-- **Framer Motion** + **GSAP** (ScrollTrigger) for smooth, scroll-driven animations
-- **Vercel Analytics**
-- Static export (`next export`), deployed to **GitHub Pages**
+- Main landing page branded as **Living in Dallas**
+- Multiple topic boards (Free Talk, Living Tips, Housing, Food, Jobs, Marketplace, Q&A)
+- Member area (`/my`) for writing and managing your own posts
+- Admin console (`/admin`) for boards, moderation, and user roles
+- Cookie-based auth with demo accounts
 
-## Content
+## Demo accounts
 
-All copy and project data are sample/placeholder values in [`data/content.ts`](./data/content.ts).
-Update that file to replace it with real content later — no database required.
+| Role  | Email               | Password  |
+|-------|---------------------|-----------|
+| Admin | admin@dallas.local  | admin1234 |
+| User  | user@dallas.local   | user1234  |
 
-## Getting Started
+## Tech stack
+
+- Next.js 15 App Router + React + TypeScript
+- Tailwind CSS + custom design tokens
+- Server Actions + JSON file store (`data/store.json`)
+- JWT session cookies (`jose` + `bcryptjs`)
+
+## Getting started
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Build & Static Export
+## Notes
 
-```bash
-npm run build
-```
-
-This produces a static site in the `out/` directory (via `output: "export"` in
-`next.config.mjs`), ready to be hosted on GitHub Pages.
-
-## Deployment
-
-Pushing to `main` triggers the `.github/workflows/deploy.yml` GitHub Actions
-workflow, which builds the site and publishes the `out/` directory to GitHub
-Pages. Make sure GitHub Pages is set to the "GitHub Actions" source in the
-repository settings.
+- The first run seeds `data/store.json` automatically.
+- This store is intended for local / demo use. For production, swap it for a real database (e.g. Supabase / Postgres).
+- GitHub Pages static export was removed because writing posts requires a Node server.
