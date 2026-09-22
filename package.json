@@ -1,5 +1,5 @@
 {
-  "name": "bibibigbar-portfolio",
+  "name": "living-in-dallas",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,13 +10,14 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",
-    "framer-motion": "^11.18.2",
-    "gsap": "^3.15.0",
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.12",
     "next": "^15.5.25",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
